@@ -32,8 +32,17 @@ bot.on('message', msg => {
     if (msg.content.match(/salut/i)) {
             msg.reply('Je suis d\'accord avec toi.')
     }
-    if (msg.content === prefix + "site"){
-        msg.channel.send("https://alexpgm.000webhostapp.com/")
+    if (msg.content === prefix + "help"){
+        var aide_embed = new Discord.RichEmbed()
+      .setColor('RANDOM')
+      .setTitle(`:robot: Voici mes catégories d'aide !`)
+      .setDescription(`Voici mes commandes disponible :`)
+      .setThumbnail(message.author.avatarURL)
+      .addField(":tools: Modération", "Fais `Cp mod` pour voir mes commandes de modération !")
+      .addField(":tada: Fun", "Fais `Cp fun` pour voir mes commandes d'animation !")
+      .setFooter("Menu d'aide - By Creep_1")
+      .setTimestamp()
+      message.channel.send(aide_embed);        
         console.log("Une personne a demandé pour aller sur ton site.")
     }
 
