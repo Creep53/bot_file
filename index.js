@@ -47,7 +47,6 @@ bot.on('message', async message => {
       .setColor('RANDOM')
       .setTitle(`:tools: Voici mes commandes amusantes !`)
       .setThumbnail(message.author.avatarURL)
-      .addField("Cp info", "Donne des indormations sur le bot et le serveur !")
 	  .addField("Cp cat", "Affiche des gifs de chat")
 	  .addField("Cp narnia", "Affiche des gifs de narnia")
 	  .addField("Cp wtf", "Affiche des gifs wtf")
@@ -57,20 +56,6 @@ bot.on('message', async message => {
       message.channel.send(fun_embed);
     }
     //message pour afficher les commandes dans le fun
-       
-    if(message.content === prefix + "info") {
-        var info_embed = new Discord.RichEmbed()
-        .setColor("#40A497")
-        .setTitle("Voici les informations sur moi et le serveur !")
-        .addField(" :robot: Nom :", `${client.user.tag}`, true)
-        .addField("Descriminateur du bot :hash:", `#${client.user.discriminator}`)
-        .addField("ID :id: ", `${client.user.id}`)
-        .addField("Nombre de membres", message.guild.members.size)
-        .addField("Nombre de catégories et de salons", message.guild.channels.size)
-        .setFooter("Info - Tuto")
-        message.channel.sendMessage(info_embed)
-        console.log("Un utilisateur a effectué la commande d'info !")
-    }
 if(message.content.startsWith(prefix + "cat")){
         var cat = [
 			"https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif",
