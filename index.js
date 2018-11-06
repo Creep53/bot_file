@@ -140,7 +140,6 @@ if(message.content.startsWith(prefix + "cat")){
       .setThumbnail(message.author.avatarURL)
       .addField("Cp kick <@user>", "Kick l'utilisateur !")
       .addField("Cp ban <@user>", "Ban l'utilisateur !")
-      .addField("Cp clear nombre", "Supprime le nombre de messages indiqué")
       .addField("Cp mute <@user>", "Mute l'utilisateur mentionné")
       .addField("Cp unmute <@user>", "Unmute l'utilisateur mentionné")
       .setFooter("Commande modération - By Creep_1")
@@ -187,17 +186,7 @@ if(message.content.startsWith(prefix + "cat")){
             message.channel.send(`${member.user.username} est ban par ${message.author.username} !`)
         });   
     }
-	 if(message.content.startsWith(prefix + "clear")) {
-        if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGE")) return message.channel.send("Vous n'avez pas la permission !");
-
-        let args = message.content.split(" ").slice(1);
-
-        if(!args[0]) return message.channel.send("Tu dois préciser un nombre de messages à supprimer !")
-        message.channel.bulkDelete(args[0]).then(() => {
-            message.channel.send(`${args[0]} messages ont été supprimés !`);
-        });
-    }
-
+	 
     if(message.content.startsWith(prefix + "mute")) {
         if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return message.channel.send("Vous n'avez pas la permission !");
 
