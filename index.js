@@ -222,6 +222,16 @@ if(message.content.startsWith(prefix + "cat")){
             message.channel.send(`${mute.user.username} n'est plus mute !`);
 		   });
     }
+if(message.content.startsWith(prefix + "clear")) {
+        if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGE")) return message.channel.send("Vous n'avez pas la permission !");
+
+        let args = message.content.split(" ").slice(1);
+
+        if(!args[0]) return message.channel.send("Tu dois préciser un nombre de messages à supprimer !")
+        message.channel.bulkDelete(args[0]).then(() => {
+            message.channel.send(`${args[0]} messages ont été supprimés !`);
+        });
+    }
 });
 
 bot.login(token); //a garder en version heroku
