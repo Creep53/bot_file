@@ -37,7 +37,6 @@ bot.on('message', msg => {
       .setColor('RANDOM')
       .setTitle(`:robot: Voici mes catégories d'aide !`)
       .setDescription(`Voici mes commandes disponible :`)
-      .setThumbnail(message.author.avatarURL)
       .addField(":tools: Modération", "Fais `Cp mod` pour voir mes commandes de modération !")
       .addField(":tada: Fun", "Fais `Cp fun` pour voir mes commandes d'animation !")
       .setFooter("Menu d'aide - By Creep_1")
