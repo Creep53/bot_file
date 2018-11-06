@@ -1,4 +1,4 @@
-const prefix = ("?");
+const prefix = ("Cp ");
 
 module.exports = class ban {
     static match (message) {
