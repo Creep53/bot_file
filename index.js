@@ -47,8 +47,6 @@ bot.on('message', async message => {
       .setColor('RANDOM')
       .setTitle(`:tools: Voici mes commandes amusantes !`)
       .setThumbnail(message.author.avatarURL)
-      .addField("Bonjour","il y a plein de petit mot caché comme ça trouve les pour discuté")
-      .addField("Cp stats", "Le bot vous envoie des informations sur votre profil !")
       .addField("Cp info", "Donne des indormations sur le bot et le serveur !")
 	  .addField("Cp cat", "Affiche des gifs de chat")
 	  .addField("Cp narnia", "Affiche des gifs de narnia")
@@ -59,29 +57,7 @@ bot.on('message', async message => {
       message.channel.send(fun_embed);
     }
     //message pour afficher les commandes dans le fun
-
-     if (!message.content.startsWith(prefix)) return;
-
-    var args = message.content.substring(prefix.length).split(" ");
-
-    switch (args[0].toLowerCase()) { 
-
-        case "stats":
-
-        var userCreateDate = message.author.createdAt.toString().split(" ");
-        var msgauthor = message.author.id;
-
-        var stats_embed = new Discord.RichEmbed()
-        .setColor("#6699FF")
-        .setTitle(`Statistiques du joueurs : ${message.author.username}`)
-        .addField(`ID du joueurs :id:`, msgauthor, true)
-        .addField(`Date d'inscription du joueur :`, userCreateDate[1] + ' ' + userCreateDate[2] + ' ' + userCreateDate[3])
-        .setThumbnail(message.author.avatarURL)
-        message.reply("Tu peux regarder tes messages privés !")
-        message.author.send(stats_embed);
-
-        break;
-        
+       
     if(message.content === prefix + "info") {
         var info_embed = new Discord.RichEmbed()
         .setColor("#40A497")
