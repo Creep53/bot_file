@@ -231,6 +231,8 @@ if(message.content.startsWith(prefix + "cat")){
         if(!message.guild.member(client.user).hasPermission("ADMINISTRATOR")) return message.channel.send("Je n'ai pas la permission !");
         message.channel.overwritePermissions(mute, { SEND_MESSAGES: true}).then(member => {
             message.channel.send(`${mute.user.username} n'est plus mute !`);
+		   });
+    }
 });
 
 bot.login(token); //a garder en version heroku
