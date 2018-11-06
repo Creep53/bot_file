@@ -1,17 +1,16 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const cfg require('./index.json'); // a garder en version desktop
 const token = process.env.token // a garder en version heroku
-const prefix = ("?");
+const prefix = ("");
 
 bot.on('ready', function () {
     console.log("Je suis prêt à être utilisé.")
-    bot.user.setActivity('rien').catch(console.error)
+    bot.user.setActivity('Cp help').catch(console.error)
 });
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur de Alexpgm' + member.displayName)
+        return channel.send('Bienvenue sur le serveur' + member.displayName)
         console.log(`${member.displayName} à rejoind le serveur.`)
     }).catch(console.error)
 });
@@ -40,5 +39,4 @@ bot.on('message', msg => {
 
 });
 
-bot.login(cfg.token); //a garder en version desktop
 bot.login(token); //a garder en version heroku
