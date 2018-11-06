@@ -4,7 +4,7 @@ const token = process.env.token // a garder en version heroku
 const prefix = ("Cp ");
 
 bot.on('ready', function () {
-    console.log("Je suis prêt à être utilisé.")
+    console.log("Oui jvais bossé patron xD")
     bot.user.setActivity('Cp help').catch(console.error)
 });
 
