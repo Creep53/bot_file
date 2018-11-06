@@ -15,14 +15,14 @@ bot.on('guildMemberAdd', member => {
     }).catch(console.error)
 });
 
-const ban = require('./kick et ban/ban');
+/*const ban = require('./kick et ban/ban');
 
 
 bot.on('message', function (message){
     if (ban.match(message)){
         return ban.action(message)
     }
-});
+});*/
 
 bot.on('message', async message => {
     if (message.content === "bonjour"){
