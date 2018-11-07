@@ -41,6 +41,10 @@ bot.on('message', async message => {
 	if (message.content === "Génial nan ?"){
         message.reply("(￣▽￣)ノ")
     }
+	if (message.content === "Creepy Bot ?"){
+        message.reply("Oui c'est moi !")
+    }
+	
     //message pour afficher le menu discusion 
 	if(message.content === prefix + "discu") {
       var aide_embed = new Discord.RichEmbed()
@@ -52,6 +56,7 @@ bot.on('message', async message => {
       .addField("Comment va tu ?" ,"Je réponds à ça")
       .addField("Que fais tu ?" ,"Je réponds à ça")
       .addField("Génial nan ?" ,"Je réponds à ça")
+      .setField("Creepy Bot ?" ,"Je réponds à ça")
       .setFooter("Menu discusion bot - By Creep_1")
       .setTimestamp()
       message.channel.send(aide_embed);
