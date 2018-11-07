@@ -38,8 +38,23 @@ bot.on('message', async message => {
    	
 	}
 	
-	if (message.content === "Comment va tu ?"){
-        message.reply("Oui et toi comment tu va ?")
+	if (message.content === "Génial nan ?"){
+        message.reply("¯\_(ツ)_/¯")
+    }
+    //message pour afficher le menu discusion 
+	if(message.content === prefix + "discu") {
+      var aide_embed = new Discord.RichEmbed()
+      .setColor('RANDOM')
+      .setTitle(`:robot: Comment communiquer avec moi !`)
+      .setDescription(`Voici mes commandes disponible :`)
+      .setThumbnail(message.author.avatarURL)
+      .addField("Bonjour")
+      .addField("Comment va tu ?")
+      .addField("Que fais tu ?")
+      .addField("Génial nan ?")
+      .setFooter("Menu discusion bot - By Creep_1")
+      .setTimestamp()
+      message.channel.send(aide_embed);
     }
     //message pour afficher le help   
     if(message.content === prefix + "help") {
@@ -50,6 +65,7 @@ bot.on('message', async message => {
       .setThumbnail(message.author.avatarURL)
       .addField(":tools: Modération", "Fais `Cp mod` pour voir mes commandes de modération !")
       .addField(":tada: Fun", "Fais `Cp fun` pour voir mes commandes d'animation !")
+      .addField(":writing_hand: Discusion bot","Fais'Cp discu' pour voir comment discuter avec moi)
       .setFooter("Menu d'aide - By Creep_1")
       .setTimestamp()
       message.channel.send(aide_embed);
