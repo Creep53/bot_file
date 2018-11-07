@@ -63,8 +63,8 @@ bot.on('message', async message => {
  		.then(function(message){
 			message.react(":white_check_mark:")
 			message.react(":x:")
-		 }).catch(function(){
 		 });
+		 }).catch(function(){
 		 }else{
 			 return message.reply("Tu n'as pas la permission")
 		 }}	
