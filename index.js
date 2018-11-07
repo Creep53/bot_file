@@ -43,7 +43,7 @@ bot.on('message', async message => {
 	if (message.content === "Je t'aime"){
 	message.reply("Je doit aimer que PN car je suis sage")
    }	
-   	if (message.content === "Envoie mon Avatar") {
+   	if (message.content === prefix + "avatar") {
        	message.author.createDM().then(channel => {
 	channel.send(message.author.avatarURL)
 	});
@@ -90,6 +90,7 @@ bot.on('message', async message => {
 	  .addField("Cp narnia", "Affiche des gifs de narnia")
 	  .addField("Cp wtf", "Affiche des gifs wtf")
 	  .addField("Cp Yuki", "Affiche des images de (attention c'est dure) Yuki")
+      	.addField("Cp Avatar", "Envoie l'image de votre avatar en mp (utilité je sais mais je sais que ça marche :c)")
       .setFooter("Commande Fun - By Creep_1")
       .setTimestamp()
       message.channel.send(fun_embed);
