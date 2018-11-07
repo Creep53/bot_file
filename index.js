@@ -25,8 +25,28 @@ bot.on('message', function (message){
 });*/
 
 bot.on('message', async message => {
-    if (message.content === "bonjour"){
+    //discution avec le bot 	
+	if (message.content === "Bonjour"){
         message.reply("Heureux de te revoir parmis nous.")
+    }
+	
+	if (message.content === "Comment va tu ?"){
+        message.reply("Oui et toi comment tu va ?")
+    }
+	if (message.content === "Que fais tu ?"){
+        message.reply("je suis entrain de suivre mon programme")
+   		var qft["https://lelundidespatates.com/wp-content/uploads/2015/11/R%C3%AAve-%C3%A0-la-con.jpg"];
+	 var gif = qft[Math.floor(Math.random() * qft.length)]; 
+	var qft_embed = new Discord.RichEmbed()
+	 .setColor('RANDOM')
+	 .setTitle('xD')
+ 	 .setImage(gif)
+	 .setFooter('xD xD xD xD')
+	message.channel.send(qft_embed);
+	}
+	
+	if (message.content === "Comment va tu ?"){
+        message.reply("Oui et toi comment tu va ?")
     }
     //message pour afficher le help   
     if(message.content === prefix + "help") {
