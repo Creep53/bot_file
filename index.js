@@ -90,7 +90,7 @@ bot.on('message', async message => {
 	  .addField("Cp narnia", "Affiche des gifs de narnia")
 	  .addField("Cp wtf", "Affiche des gifs wtf")
 	  .addField("Cp Yuki", "Affiche des images de (attention c'est dure) Yuki")
-      	.addField("Cp Avatar", "Envoie l'image de votre avatar en mp (utilité je sais mais je sais que ça marche :c)")
+      	.addField("Cp avatar", "Envoie l'image de votre avatar en mp (utilité je sais mais je sais que ça marche :c)")
       .setFooter("Commande Fun - By Creep_1")
       .setTimestamp()
       message.channel.send(fun_embed);
