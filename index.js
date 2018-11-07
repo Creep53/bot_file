@@ -44,7 +44,7 @@ bot.on('message', async message => {
 	if (message.content === "Creepy Bot ?"){
         message.reply("Oui c'est moi !")
     }
-	if (message.content === "je t'aime :hearts:"){
+	if (message.content === "je t'aime"){
         message.reply("je comprends pas le concept de l'amour mon créateur m'a rien dit sur ce sujet")
     }
     //message pour afficher le menu discusion 
@@ -59,7 +59,7 @@ bot.on('message', async message => {
       .addField("Que fais tu ?" ,"Je réponds à ça")
       .addField("Génial nan ?" ,"Je réponds à ça")
       .addField("Creepy Bot ?" ,"Je réponds à ça")//erreur corrigé
-      .addField("je t'aime :hearts:" ,"Je réponds à ça")//rajouter dans le menu 07/11/2018
+      .addField("je t'aime" ,"Je réponds à ça")//rajouter dans le menu 07/11/2018
       .setFooter("Menu discusion bot - By Creep_1")
       .setTimestamp()
       message.channel.send(aide_embed);
