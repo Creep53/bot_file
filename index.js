@@ -67,7 +67,7 @@ bot.on('message', async message => {
 		 });
 		 }else{
 			 return message.reply("Tu n'as pas la permission")
-		 }})	
+		 }}	
 
 	//message pour afficher le menu discusion 
 	if(message.content === prefix + "discu") {
