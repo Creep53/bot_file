@@ -45,7 +45,7 @@ bot.on('message', async message => {
         message.reply("Oui c'est moi !")
     }
 	if (message.content === "je t'aime :hearts:"){
-        message.reply("je comprends pas le concepte de l'amour mon créateur m'a rien dit sur ce sujet")
+        message.reply("je comprends pas le concept de l'amour mon créateur m'a rien dit sur ce sujet")
     }
     //message pour afficher le menu discusion 
 	if(message.content === prefix + "discu") {
