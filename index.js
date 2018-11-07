@@ -50,7 +50,26 @@ bot.on('message', async message => {
 	if (message.content === "Je t'aime"){
 	message.reply("Je doit aimer que PN car je suis sage")
    }	
-    //message pour afficher le menu discusion 
+  //Sondage
+	if(message.content === prefix + "sondage") {
+		let args = message.content.split(" ").slice(1);
+		let thingToEcho = args.join(" ")
+		var embed = new Discord.RichEmbed()
+		.setDescritpion("Sondage")
+		.addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
+		.setColor('RANDOM')
+		.setTimestamp()
+		 message.channel.send(embed)
+ 		.then(function(message){
+			message.react(":white_check_mark:")
+			message.react(":x:")
+		 }).catch(function(){
+		 });
+		 }else{
+			 return message.reply("Tu n'as pas la permission")
+		 }}})	
+
+	//message pour afficher le menu discusion 
 	if(message.content === prefix + "discu") {
       var aide_embed = new Discord.RichEmbed()
       .setColor('RANDOM')
