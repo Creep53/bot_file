@@ -39,7 +39,7 @@ bot.on('message', async message => {
 	}
 	
 	if (message.content === "Génial nan ?"){
-        message.reply("¯\_(ツ)_/¯")
+        message.reply("(￣▽￣)ノ")
     }
     //message pour afficher le menu discusion 
 	if(message.content === prefix + "discu") {
