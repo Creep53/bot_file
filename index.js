@@ -8,13 +8,6 @@ bot.on('ready', function () {
     bot.user.setActivity('Cp help').catch(console.error)
 });
 
-bot.on('guildMemberAdd', member => {
-    member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur' + member.displayName)
-        console.log(`${member.displayName} à rejoind le serveur.`)
-    }).catch(console.error)
-});
-
 /*const ban = require('./kick et ban/ban');
 
 
@@ -51,7 +44,9 @@ bot.on('message', async message => {
 	message.reply("Je doit aimer que PN car je suis sage")
    }	
    	if (message.content === "Envoie mon Avatar") {
-       	message.channel.sendMessage(message.author.avatarURL);
+       	message.author.createDM().then(channel => {
+	channel.send(message.author.avatarURL)
+	});
   }
 
 	//message pour afficher le menu discusion 
