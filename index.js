@@ -65,7 +65,7 @@ bot.on('message', async message => {
       .setThumbnail(message.author.avatarURL)
       .addField(":tools: Modération", "Fais `Cp mod` pour voir mes commandes de modération !")
       .addField(":tada: Fun", "Fais `Cp fun` pour voir mes commandes d'animation !")
-      .addField(":writing_hand: Discusion bot","Fais'Cp discu' pour voir comment discuter avec moi)
+      .addField(":writing_hand: Discusion bot","Fais'Cp discu' pour voir comment discuter avec moi !")
       .setFooter("Menu d'aide - By Creep_1")
       .setTimestamp()
       message.channel.send(aide_embed);
