@@ -230,8 +230,8 @@ if(message.content.startsWith(prefix + "clear")) {
         if(!args[0]) return message.channel.send("Tu dois préciser un nombre de messages à supprimer !")
         message.channel.bulkDelete(args[0]).then(() => {
             message.channel.send(`${args[0]} messages ont été supprimés !`);
-        });
-    }
+        })
+	}
 });
 
 bot.login(token); //a garder en version heroku
