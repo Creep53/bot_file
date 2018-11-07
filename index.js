@@ -47,6 +47,9 @@ bot.on('message', async message => {
 	if (message.content === "je t'aime"){
         message.reply("je comprends pas le concept de l'amour mon créateur m'a rien dit sur ce sujet")
     }
+	if (message.content === "Je t'aime"){
+	message.reply("Je doit aimer que PN car je suis sage")
+   }	
     //message pour afficher le menu discusion 
 	if(message.content === prefix + "discu") {
       var aide_embed = new Discord.RichEmbed()
