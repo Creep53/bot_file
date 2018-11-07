@@ -59,6 +59,7 @@ bot.on('message', async message => {
       .addField("Que fais tu ?" ,"Je réponds à ça")
       .addField("Génial nan ?" ,"Je réponds à ça")
       .addField("Creepy Bot ?" ,"Je réponds à ça")//erreur corrigé
+      .addField("je t'aime :hearts:" ,"Je réponds à ça")//rajouter dans le menu 07/11/2018
       .setFooter("Menu discusion bot - By Creep_1")
       .setTimestamp()
       message.channel.send(aide_embed);
