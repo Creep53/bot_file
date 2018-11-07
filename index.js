@@ -51,7 +51,7 @@ bot.on('message', async message => {
 	message.reply("Je doit aimer que PN car je suis sage")
    }	
    	if (message.content === "Envoie mon Avatar") {
-       	message.channel.sendMessage(message.author.avatar);
+       	message.channel.sendMessage(message.author.avatarURL);
   }
 
 	//message pour afficher le menu discusion 
