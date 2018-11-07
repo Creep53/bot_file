@@ -44,7 +44,9 @@ bot.on('message', async message => {
 	if (message.content === "Creepy Bot ?"){
         message.reply("Oui c'est moi !")
     }
-	
+	if (message.content === "je t'aime :hearts:"){
+        message.reply("je comprends pas le concepte de l'amour mon créateur m'a rien dit sur ce sujet")
+    }
     //message pour afficher le menu discusion 
 	if(message.content === prefix + "discu") {
       var aide_embed = new Discord.RichEmbed()
