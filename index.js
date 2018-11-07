@@ -46,7 +46,7 @@ bot.on('message', async message => {
    	if (message.content === prefix + "avatar") {
        	message.author.createDM().then(channel => {
 	channel.send(message.author.avatarURL)
-	console.log(message.author.avatarURl)
+	console.log($'message.author.avatarURl')
 	});
   }
 
