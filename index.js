@@ -34,9 +34,10 @@ bot.on('message', async message => {
 	message.reply("Je doit aimer que PN car je suis sage")
    }	
    	if (message.content === prefix + "avatar") {
-       	const avatar = (message.author.avatarURL);
+       		const avatar = (message.author.avatarURL);
+		const ID = (message.author);
 	message.author.createDM().then(channel => {
-	channel.send(avatar)
+	channel.send(avatar,ID)
 	console.log(`${message.author}`,avatar)
 	});
   }
