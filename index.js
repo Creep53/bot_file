@@ -8,15 +8,6 @@ bot.on('ready', function () {
     bot.user.setActivity('Cp help').catch(console.error)
 });
 
-/*const ban = require('./kick et ban/ban');
-
-
-bot.on('message', function (message){
-    if (ban.match(message)){
-        return ban.action(message)
-    }
-});*/
-
 bot.on('message', async message => {
     //discution avec le bot 	
 	if (message.content === "Bonjour"){
