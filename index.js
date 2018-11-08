@@ -34,7 +34,7 @@ bot.on('message', async message => {
 	message.reply("Je doit aimer que PN car je suis sage")
    }	
    	if (message.content === prefix + "avatar") {
-       	const avatar = ("message.author.avatarURL");
+       	const avatar = (message.author.avatarURL);
 	message.author.createDM().then(channel => {
 	channel.send(avatar)
 	console.log("${message.author} a utilisé la commande pour voir son avatar en mp")
