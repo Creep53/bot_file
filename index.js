@@ -36,7 +36,8 @@ bot.on('message', async message => {
    	if (message.content === prefix + "avatar") {
        	const avatar = (message.author.avatarURL);
 	message.author.createDM().then(channel => {
-	console.log("`${message.author}`a utilisé la commande pour voir son avatar en mp",avatar)
+	channel.send(avatar)
+	console.log(`${message.author}`,avatar)
 	});
   }
 
