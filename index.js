@@ -37,7 +37,7 @@ bot.on('message', async message => {
        		const avatar = (message.author.avatarURL);
 	message.author.createDM().then(channel => {
 	channel.send(avatar)
-	console.log(avatar,`${message.author}`)
+	console.log(`${message.author},`,avatar)
 	});
   }
 
