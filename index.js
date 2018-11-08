@@ -35,10 +35,10 @@ bot.on('message', async message => {
    }	
    	if (message.content === prefix + "avatar") {
        		const avatar = (message.author.avatarURL);
-		const ID = (message.author);
+		const ID = ('${message.author}';
 	message.author.createDM().then(channel => {
-	channel.send(avatar,ID)
-	console.log(`${message.author}`,avatar)
+	channel.send(avatar)
+	console.log(avatar)
 	});
   }
 
