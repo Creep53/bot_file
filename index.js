@@ -13,6 +13,9 @@ bot.on('message', async message => {
 	if (message.content === "Bonjour"){
         message.reply("Heureux de te revoir parmis nous.")
     }
+	if (message.content === prefix +"join"){
+	voiceChannel.join()
+	}
 	
 	if (message.content === "Comment va tu ?"){
         message.reply("Oui et toi comment tu va ?")
