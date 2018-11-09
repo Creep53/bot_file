@@ -12,11 +12,7 @@ bot.on('message', async message => {
     //discution avec le bot 	
 	if (message.content === "Bonjour"){
         message.reply("Heureux de te revoir parmis nous.")
-    }
-	if (message.content === prefix +"join"){
-	voiceChannel.join()
-	}
-	
+    }	
 	if (message.content === "Comment va tu ?"){
         message.reply("Oui et toi comment tu va ?")
     }
@@ -43,7 +39,10 @@ bot.on('message', async message => {
 	console.log(`${message.author},`,avatar)
 	});
   }
-
+	//message pour 
+	if(message.content === prefix + "Quizz") {
+	   message.channel.send(`pas encore codé ${message.author}`);
+    }
 	//message pour afficher le menu discusion 
 	if(message.content === prefix + "discu") {
       var aide_embed = new Discord.RichEmbed()
