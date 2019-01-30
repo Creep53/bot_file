@@ -271,9 +271,4 @@ if (message.content.startsWith(prefix + "clear")) {
     }
 });
 
-
-const channel = member.guild.channels.find('cяεερ_1 ☠');
-message.author.createDM().then(channel => {
-	channel.send(":heart:")
-);
 bot.login(token); //a garder en version heroku
