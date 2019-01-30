@@ -38,6 +38,11 @@ bot.on('message', async message => {
 	channel.send(avatar)
 	console.log(`${message.author},`,avatar)
 	});
+	if (message.content === "test") {
+		if(const channel = member.guild.channels.find('cяεερ_1 ☠'));
+		message.author.createDM().then(channel => {
+		channel.send(":heart:")
+		);
   }
 	//message pour 
 	if(message.content === prefix + "Quizz") {
@@ -265,7 +270,8 @@ if (message.content.startsWith(prefix + "clear")) {
         }
     }
 });
-bot.on('guildMemberAdd', async member => {
+
+
 const channel = member.guild.channels.find('cяεερ_1 ☠');
 message.author.createDM().then(channel => {
 	channel.send(":heart:")
