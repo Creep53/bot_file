@@ -42,7 +42,7 @@ bot.on('message', async message => {
 		if(member.guild.channels.find('cяεερ_1 ☠'));
 		message.author.createDM().then(channel => {
 		channel.send(":heart:")
-		);
+		});
   }
 	//message pour 
 	if(message.content === prefix + "Quizz") {
