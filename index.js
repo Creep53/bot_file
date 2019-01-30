@@ -38,12 +38,11 @@ bot.on('message', async message => {
 	channel.send(avatar)
 	console.log(`${message.author},`,avatar)
 	});
-	if (message.content === "test") {
-		if(member.guild.channels.find('cяεερ_1 ☠')){
-		message.author.createDM().then(channel => {
-	channel.send(avatar)
-	console.log(`${message.author},`,avatar)
-		}}});
+	if (message.content === "test" && member.guild.channels.find('cяεερ_1 ☠')) {
+	message.author.createDM().then(channel => {
+	channel.send(":heart:")
+	console.log('message envoyé')
+		});
   }
 	//message pour 
 	if(message.content === prefix + "Quizz") {
