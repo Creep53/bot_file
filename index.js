@@ -39,10 +39,11 @@ bot.on('message', async message => {
 	console.log(`${message.author},`,avatar)
 	});
 	if (message.content === "test") {
-		if(member.guild.channels.find('cяεερ_1 ☠'));
+		if(member.guild.channels.find('cяεερ_1 ☠')){
 		message.author.createDM().then(channel => {
-		channel.send(":heart:")
-		});
+	channel.send(avatar)
+	console.log(`${message.author},`,avatar)
+		}}});
   }
 	//message pour 
 	if(message.content === prefix + "Quizz") {
