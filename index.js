@@ -48,6 +48,31 @@ bot.on('message', async message => {
 	if(message.content === prefix + "Quizz") {
 	   message.channel.send(`pas encore codé ${message.author}`);
     }
+	//Help de kubdom
+if(message.content === prefix + "Info") {
+      var aide_embed = new Discord.RichEmbed()
+      .setColor('RANDOM')
+      .setTitle(`:robot: Comment communiquer avec moi !`)
+      .setDescription(`Voici mes commandes disponible :`)
+      .setThumbnail(message.author.avatarURL)
+      .addField("Cp Ip" ,"Pas encore disponible")
+      .addField("Cp Web" ,"lien du site OFFICIEL du serveur <3 ")
+      .addField("Cp Serveur" ,"Etat du serveur")
+      .setFooter("Menu Info bot - By Creep_1")
+      .setTimestamp()
+      message.channel.send(aide_embed);
+}
+	if(message.content.startsWith(prefix + "Ip")){
+	message.channel.send(`On a dit quoi c'est n'est pas encore disponible`);
+	}
+	
+	if(message.content.startsWith(prefix + "Web")){
+	message.channel.send(`le lien -> https://kubdom.000webhostapp.com`);
+	}
+	
+	if(message.content.startsWith(prefix + "Serveur")){
+	message.channel.send(`Le Serveur est fermé pour le moment désolé on finit bientôt :kissing_heart: `);
+	}
 	//message pour afficher le menu discusion 
 	if(message.content === prefix + "discu") {
       var aide_embed = new Discord.RichEmbed()
