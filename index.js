@@ -81,7 +81,7 @@ if(message.content === prefix + "Info") {
       .setDescription(`Voici mes commandes disponible :`)
       .setThumbnail(message.author.avatarURL)
       .addField("Bonjour" ,"Je réponds à ça")
-      .addField("Comment va tu ?" ,"Je réponds à ça")
+      .addField("Comment vas tu ?" ,"Je réponds à ça")
       .addField("Que fais tu ?" ,"Je réponds à ça")
       .addField("Génial nan ?" ,"Je réponds à ça")
       .addField("Creepy Bot ?" ,"Je réponds à ça")//erreur corrigé
