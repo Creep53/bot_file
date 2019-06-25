@@ -13,8 +13,8 @@ bot.on('message', async message => {
 	if (message.content === "Bonjour"){
         message.reply("Heureux de te revoir parmis nous.")
     }	
-	if (message.content === "Comment va tu ?"){
-        message.reply("Oui et toi comment tu va ?")
+	if (message.content === "Comment vas tu ?"){
+        message.reply("Oui et toi comment tu vas ?")
     }
 	if (message.content === "Que fais tu ?"){
         message.reply("je suis entrain de suivre mon programme")
@@ -24,7 +24,7 @@ bot.on('message', async message => {
         message.reply("(￣▽￣)ノ")
     }
 	if (message.content === "Creepy Bot ?"){
-        message.reply("Oui c'est moi !")
+        message.reply("Oui c'est moi ? si tu veux plus d'aide je t'invite à faire la commande Cp help")
     }
 	if (message.content === "je t'aime"){
         message.reply("je comprends pas le concept de l'amour mon créateur m'a rien dit sur ce sujet")
@@ -52,7 +52,7 @@ bot.on('message', async message => {
 if(message.content === prefix + "Info") {
       var aide_embed = new Discord.RichEmbed()
       .setColor('RANDOM')
-      .setTitle(`:robot: Comment communiquer avec moi !`)
+      .setTitle(`:robot: Informations sur le serveur Kub-Dom`)
       .setDescription(`Voici mes commandes disponible :`)
       .setThumbnail(message.author.avatarURL)
       .addField("Cp Ip" ,"Pas encore disponible")
