@@ -14,7 +14,7 @@ bot.on('message', async message => {
         message.reply("Heureux de te revoir parmis nous.")
     }	
 	if (message.content === "Comment vas tu ?"){
-        message.reply("Oui et toi comment tu vas ?")
+        message.reply("Bien et toi comment tu vas ?")
     }
 	if (message.content === "Que fais tu ?"){
         message.reply("je suis entrain de suivre mon programme")
@@ -24,7 +24,7 @@ bot.on('message', async message => {
         message.reply("(￣▽￣)ノ")
     }
 	if (message.content === "Creepy Bot ?"){
-        message.reply("Oui c'est moi ? si tu veux plus d'aide je t'invite à faire la commande Cp help")
+        message.reply("Oui c'est moi ? Si tu veux plus d'aide je t'invite à faire la commande Cp help")
     }
 	if (message.content === "je t'aime"){
         message.reply("je comprends pas le concept de l'amour mon créateur m'a rien dit sur ce sujet")
@@ -115,7 +115,7 @@ if(message.content === prefix + "Info") {
 	  .addField("Cp narnia", "Affiche des gifs de narnia")
 	  .addField("Cp wtf", "Affiche des gifs wtf")
 	  .addField("Cp Yuki", "Affiche des images de (attention c'est dure) Yuki")
-      	.addField("Cp avatar", "Envoie l'image de votre avatar en mp (utilité je sais mais je sais que ça marche :c)")
+      	.addField("Cp avatar", "Envoie l'image de votre avatar en mp (utilité je sais pas mais je sais que ça marche :c)")
       .setFooter("Commande Fun - By Creep_1")
       .setTimestamp()
       message.channel.send(fun_embed);
