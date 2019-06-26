@@ -299,7 +299,7 @@ if (message.content.startsWith(prefix + "clear")) {
     }
 });
 
-client.on('message', async message => {
+bot.on('message', async message => {
 	if (message.author.bot) return;
 	if (!message.content.startsWith(prefix)) return;
 
