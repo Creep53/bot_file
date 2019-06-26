@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const ytdl = require('./node_modules/ytdl-coreytdl-core');
+//const ytdl = require('./node_modules/ytdl-coreytdl-core');
 const bot = new Discord.Client();
 const token = process.env.token // a garder en version heroku
 const prefix = ("Cp ");
