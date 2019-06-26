@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
+const ytdl = require('ytdl-core');
 const bot = new Discord.Client();
 const token = process.env.token // a garder en version heroku
 const prefix = ("Cp ");
-const ytdl = require('ytdl-core');
 
 bot.on('ready', function () {
     console.log("Oui jvais bossé patron xD")
