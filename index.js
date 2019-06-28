@@ -1,12 +1,11 @@
 const Discord = require('discord.js');
-//const ytdl = require('./node_modules/ytdl-coreytdl-core');
 const bot = new Discord.Client();
 const token = process.env.token // a garder en version heroku
 const prefix = ("Cp ");
 
 bot.on('ready', function () {
     console.log("Oui jvais bossé patron xD")
-    bot.user.setActivity('Cp help').catch(console.error)
+    bot.user.setGame('Cp help').catch(console.error)
 });
 
 bot.on('message', async message => {
